@@ -1,0 +1,19 @@
+{
+  "name": "testing-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cmd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "jsdom": "^17.0.0"
+  }
+}
