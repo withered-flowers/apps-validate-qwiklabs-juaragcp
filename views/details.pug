@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+  div.container.flex.h-screen.mx-auto
+    div.m-auto
+      div
+        p.text-xl.text-center Details of Qwiklabs Profile
+      div
+        p.text-md.text-center #{data.profileName}
+      div
+        p.text-md.text-center Tiers: #{data.tiers}
+      div.overflow-x-auto
+        p.text-md.text-center Total Valid Quests: #{data.validQuests}
+        table.table.w-full
+          thead
+            tr
+              th Quest Name
+              th Quest Date of Completions
+          tbody
+            each quest in data.detailValidQuests
+              tr
+                td= quest.questName
+                td= quest.questDayOfCompletion
+            tr
+              td.text-center(colspan="2") Total: #{data.validQuests}
+
+

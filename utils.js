@@ -6,6 +6,7 @@ const {
   QWIKLABS_NAME,
   QS_QUEST_NAME,
   QS_QUEST_DAY_OF_COMPLETION,
+  TIERS,
 } = require("./config.js");
 
 const isValidQuestName = (node) => {
@@ -68,7 +69,11 @@ const formatOutput = (node) => {
     .textContent.replace(/(\r\n|\n|\r)/gm, "")
     .split("Earned ")[1];
 
-  return `${questName} - ${questDayOfCompletion}`;
+  // return `${questName} - ${questDayOfCompletion}`;
+  return {
+    questName,
+    questDayOfCompletion,
+  };
 };
 
 const filterQuests = (nodeList) => {
@@ -89,6 +94,19 @@ const fetchNodeList = (dom) => {
   return [...dom.window.document.querySelectorAll("div.profile-badge")];
 };
 
+const calculateTiers = (validQuests) => {
+  const total = validQuests.length;
+  let tiers = -1;
+
+  TIERS.forEach((minQuest, index) => {
+    if (total >= minQuest) {
+      tiers = index + 1;
+    }
+  });
+
+  return tiers;
+};
+
 module.exports = {
   isValidQuestName,
   isValidQuestDate,
@@ -96,4 +114,5 @@ module.exports = {
   filterQuests,
   fetchProfileName,
   fetchNodeList,
+  calculateTiers,
 };

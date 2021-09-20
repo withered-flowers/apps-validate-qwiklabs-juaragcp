@@ -4,6 +4,9 @@
   "description": "",
   "main": "cmd.js",
   "scripts": {
+    "start": "node app.js",
+    "build:css": "tailwindcss build -i public/styles/tailwind.css -o public/styles/style.css",
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +17,16 @@
     "dayjs": "^1.10.7",
     "express": "^4.17.1",
     "got": "^11.8.2",
-    "jsdom": "^17.0.0"
+    "jsdom": "^17.0.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@prettier/plugin-pug": "^1.16.6",
+    "autoprefixer": "^10.3.4",
+    "daisyui": "^1.14.0",
+    "nodemon": "^2.0.12",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
   }
 }

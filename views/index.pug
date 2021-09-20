@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+  div.container.flex.h-screen.mx-auto
+    div.m-auto
+      div
+        p.text-xl.text-center Check Qwiklabs Public Profile URL
+      form(action="/", method="post").flex.flex-col.place-items-center.mt-4
+        div.form-control
+          input.input.input-bordered.w-80(type='text', placeholder='Insert URL Here', name="qwiklabsUrl")
+        div.form-control.my-4
+          button.btn.btn-sm.btn-primary(type="submit") Check URL
+
