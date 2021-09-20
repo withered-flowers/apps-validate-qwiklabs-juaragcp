@@ -16,4 +16,5 @@ https://goo.gle/juaragcp
    (Don't worry, no data is preserved here)
 5. See your detailed Public Qwiklabs Profile and Tiers in JuaraGCP S5.
 
+## Lefties
 Copyleft withered-flowers @ 2021
