@@ -27,7 +27,7 @@ const LIST_OF_QUESTS = [
   "Managing Security in Google Cloud",
   "Understanding Google Cloud Security and Operations",
   "Site Reliability Engineering: Measuring and Managing Reliability",
-  "Google Cloud Computing Foundations: Infrastructure in Google Cloud - Locales ",
+  "Google Cloud Computing Foundations: Infrastructure in Google Cloud - Locales",
 ];
 
 // Date Range from Start to Finish
