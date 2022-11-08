@@ -15,9 +15,9 @@ app.get("/", async (req, res) => {
 
 app.post("/", async (req, res) => {
   const { qwiklabsUrl } = req.body;
+
   try {
     const data = await fetchDataAsJson(qwiklabsUrl);
-
     res.status(200).json(data);
   } catch (err) {
     res.status(500).json({
