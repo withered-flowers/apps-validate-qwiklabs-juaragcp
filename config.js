@@ -1,30 +1,40 @@
 // List of quests to complete
 // Fetch from https://goo.gle/juaragcp
 const LIST_OF_QUESTS = [
-  "Perform Foundational Data, ML, and AI Tasks in Google Cloud",
-  "Insights from Data with BigQuery",
-  "Exploring Data with Looker",
-  "Create ML Models with BigQuery ML",
-  "Build and Optimize Data Warehouses with BigQuery",
-  "Engineer Data in Google Cloud",
-  "Integrate with Machine Learning APIs",
-  "BigQuery Basics for Data Analysts",
-  "BigQuery for Marketing Analysts",
-  "Data Catalog Fundamentals",
-  "Building Codeless Pipelines on Cloud Data Fusion",
-  "Data Science on Google Cloud",
-  "Scientific Data Processing",
-  "Data Engineering",
-  "Building Advanced Codeless Pipelines on Cloud Data Fusion",
-  "NCAA® March Madness®: Bracketology with Google Cloud",
+  "Deploy and Manage Cloud Environments with Google Cloud",
+  "Secure Workloads in Google Kubernetes Engine",
+  "Measure Site Reliability using Cloud Operations Suite",
+  "Optimize Costs for Google Kubernetes Engine",
+  "Create and Manage Cloud Resources",
+  "Perform Foundational Infrastructure Tasks in Google Cloud",
+  "Monitor Environments with Google Cloud Managed Service for Prometheus",
+  "Cloud Architecture: Design, Implement, and Manage",
+  "Protect Cloud Traffic with BeyondCorp Enterprise (BCE) Security",
+  "Deploy to Kubernetes in Google Cloud",
+  "Set Up and Configure a Cloud Environment in Google Cloud",
+  "Build and Secure Networks in Google Cloud",
+  "Automating Infrastructure on Google Cloud with Terraform",
+  "Implement DevOps in Google Cloud",
+  "Monitor and Log with Google Cloud Operations Suite",
+  "Baseline: Infrastructure",
+  "Cloud Architecture",
+  "Cloud Engineering",
+  "Networking in Google Cloud",
+  "Google Cloud's Operations Suite on GKE",
+  "Security & Identity Fundamentals",
   "Applied Data: Blockchain",
+  "Cloud Development",
+  "Managing Security in Google Cloud",
+  "Understanding Google Cloud Security and Operations",
+  "Site Reliability Engineering: Measuring and Managing Reliability",
+  "Google Cloud Computing Foundations: Infrastructure in Google Cloud - Locales ",
 ];
 
 // Date Range from Start to Finish
 // [0] = Start Date
 // [1] = Finish Date
 // Format in yyyy-mm-dd
-const DATE_RANGE = ["2021-09-16", "2021-09-26"];
+const DATE_RANGE = ["2022-11-08", "2022-12-04"];
 
 // Tiers to finish the quest
 // e.g.
@@ -32,7 +42,7 @@ const DATE_RANGE = ["2021-09-16", "2021-09-26"];
 // Tier 1 = 6 Quests to Complete
 // Tier 2 = 10 Quests to Complete
 // Tier 3 = 14 Quests to Complete
-const TIERS = [6, 10, 14];
+const TIERS = [8, 14];
 
 // DOM Object for holding the Qwiklabs Profile Name
 const QWIKLABS_NAME = "h1.ql-headline-1";

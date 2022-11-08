@@ -1,5 +1,3 @@
-const path = require("path");
-
 const express = require("express");
 const app = express();
 
@@ -7,16 +5,12 @@ const { fetchDataAsJson } = require("./cmd.js");
 
 const port = process.env.PORT || 3000;
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
-app.use(express.static(path.join(__dirname, "public")));
-
 app.use(require("cors")());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  res.render("index");
+  res.status(200).json("This is just a dummy");
 });
 
 app.post("/", async (req, res) => {
@@ -24,9 +18,14 @@ app.post("/", async (req, res) => {
   try {
     const data = await fetchDataAsJson(qwiklabsUrl);
 
-    res.render("details", { data });
+    res.status(200).json(data);
   } catch (err) {
-    res.send("Not a Valid Quests URL");
+    res.status(500).json({
+      statusCode: 500,
+      error: {
+        message: err,
+      },
+    });
   }
 });
 
