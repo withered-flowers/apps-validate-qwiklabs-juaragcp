@@ -1,8 +1,8 @@
-# Qwiklabs Public Profile Fetcher
+# CloudSkillBoost Public Profile Fetcher
 
-This is just a sample apps to fetch data from qwiklabs public profile.
+This is just a sample backend apps to fetch data from CloudSkillBoost public profile.
 
-Intended to use for JuaraGCP's Season 5 event only.
+Intended to use for JuaraGCP's Season 8 event only.
 
 For more information about the event, please click the link below:
 
@@ -12,9 +12,8 @@ https://goo.gle/juaragcp
 1. Install nodejs
 2. run `npm install`
 3. run `node app.js`
-4. Insert your qwiklabs public profile  
-   (Don't worry, no data is preserved here)
-5. See your detailed Public Qwiklabs Profile and Tiers in JuaraGCP S5.
+
+(This repo is used for backend only)
 
 ## Lefties
 Copyleft withered-flowers @ 2021
