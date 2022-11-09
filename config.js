@@ -19,7 +19,7 @@ const LIST_OF_QUESTS = [
   "Baseline: Infrastructure",
   "Cloud Architecture",
   "Cloud Engineering",
-  "Networking in Google Cloud",
+  "Networking Fundamentals in Google Cloud",
   "Google Cloud's Operations Suite on GKE",
   "Security & Identity Fundamentals",
   "Applied Data: Blockchain",
